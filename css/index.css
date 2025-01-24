@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body {font-family: pretendard;}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {font-family: 'ChosunCentennial', 'Noto Serif CJK', serif;}
+
+
+
+
+
+* {margin: 0; padding: 0; }
+li {list-style : none;}
+a {text-decoration: none; color: #fff; opacity: 0.5;}
+table {border-collapse: collapse;}
+caption {font-size: 0; color: transparent; text-indent: -9999px; position: absolute; left: -9999px; height: 0; overflow: hidden;}
+
+html, body {height: 100%;}
+
+#wrap {background: url('../pixelcut-export.png'); width: 100%; height: 100%; background-size: cover;}  
+
+header {width: 80%; height: 50px; border-radius: 25px; background: rgba(000, 000, 000, 0.6); position: absolute; left: 50%; top: 40px; transform: translateX(-50%); display: flex; justify-content: space-between ; align-items: center;
+backdrop-filter: blur(5px); opacity: 0.8; transition:0.2s; z-index: 10;}
+
+header h1 {width: 200px; background: #000;}
+header audio {width: 200px; height: 30px; transition: 1s;}
+header nav {width: 800px; }
+
+header nav .gnb {display: flex;}
+header nav .gnb li {width: 20%; flex-grow: 1; font-size: 18px; text-align: center; border-right: 1px solid #ddd ; }
+header nav .gnb li:last-child{border: 0;}
+header nav .gnb li a {display: block;}
+
+header:hover audio {width: 400px;}
+header:hover {opacity: 1;}
+header:hover .gnb li a {opacity: 1;}
+
+
+.textbox {position: absolute; right: 10%; top: 50%; transform: translateY(-50%); font-size: 60px; color: #fff; display: flex; gap: 14px; flex-direction: row-reverse; z-index: 10}
+
+.textbox ul {}
+.textbox ul li {height: 60px; animation: merong 3s forwards; opacity: 0; position: relative;}
+.textbox ul li.ma {margin-bottom: 30px;}
+@keyframes merong {
+    0% {opacity: 0; left: -100px; top: 100px; transform: rotate(20deg);}
+    100% {opacity: 1; left: 0; top: 0; transform: rotate(0);}
+}
+
+.textbox ul:nth-child(1) li:nth-child(1) {animation-delay: 0s;}
+.textbox ul:nth-child(1) li:nth-child(2) {animation-delay: 0.2s;}
+.textbox ul:nth-child(1) li:nth-child(3) {animation-delay: 0.4s;}
+.textbox ul:nth-child(1) li:nth-child(4) {animation-delay: 0.6s;}
+.textbox ul:nth-child(1) li:nth-child(5) {animation-delay: 0.8s;}
+.textbox ul:nth-child(1) li:nth-child(6) {animation-delay: 1.0s;}
+.textbox ul:nth-child(1) li:nth-child(7) {animation-delay: 1.2s;}
+.textbox ul:nth-child(1) li:nth-child(8) {animation-delay: 1.4s;}
+.textbox ul:nth-child(1) li:nth-child(9) {animation-delay: 1.6s;}
+.textbox ul:nth-child(1) li:nth-child(10) {animation-delay: 1.8s;}
+
+.textbox ul:nth-child(2) li:nth-child(1) {animation-delay: 2.0s;}
+.textbox ul:nth-child(2) li:nth-child(2) {animation-delay: 2.2s;}
+.textbox ul:nth-child(2) li:nth-child(3) {animation-delay: 2.4s;}
+.textbox ul:nth-child(2) li:nth-child(4) {animation-delay: 2.6s;}
+.textbox ul:nth-child(2) li:nth-child(5) {animation-delay: 2.8s;}
+.textbox ul:nth-child(2) li:nth-child(6) {animation-delay: 3.0s;}
+.textbox ul:nth-child(2) li:nth-child(7) {animation-delay: 3.2s;}
+.textbox ul:nth-child(2) li:nth-child(8) {animation-delay: 3.4s;}
+
+
+.light_box {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.light_box .light{background: url('../itachi/itachiparticle.png'); position: absolute; width: 100%; height: 100%; ; left: 0; top: 0;}
+.light_box .light:nth-child(1) {animation: effect 10s infinite linear;}
+@keyframes effect {
+    0% {background-position: 0 0;}
+    100% {background-position: -800px -1000px;}
+}
+
